@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- =====================================================
+    AMANDATUR - SISTEMA DE RESERVAS INTELIGENTES
+    Página principal HTML
+    Estrutura preparada para CSS, JavaScript, WhatsApp,
+    Google Apps Script, Google Sheets e N8N
+  ====================================================== -->
+
+  <meta charset="UTF-8" />
+
+  <!-- Responsivo para iOS, Android e tablets -->
+  <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" 
+  />
+
+  <meta name="theme-color" content="#df2b93" />
+  <meta name="description" content="Reserve sua poltrona com a AMANDATUR para viagens de Cianorte a São Paulo / Brás. Viagens toda quarta e domingo." />
+
+  <title>AMANDATUR | Reservas Inteligentes</title>
+  <link rel="icon" type="image/png" href="logo.jpg">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" 
+    rel="stylesheet" 
+  />
+
+  <!-- Ícones modernos -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+  <!-- =====================================================
+    BACKGROUND VISUAL
+  ====================================================== -->
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+  <div class="page-glow glow-three"></div>
+
+  <!-- =====================================================
+    HEADER
+  ====================================================== -->
+  <header class="header">
+    <div class="container header-content">
+
+      <a href="#" class="brand" aria-label="AMANDATUR - Início">
+        <div class="brand-logo">
+          <!-- 
+            Coloque a imagem da logo na mesma pasta do index.html
+            com o nome: logo-amandatur.png
+          -->
+          <img src="logo.jpg" alt="Logo AMANDATUR" />
+        </div>
+
+        <div class="brand-text">
+          <strong>AMANDATUR</strong>
+          <span>Reservas Inteligentes</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a href="#viagens">Viagens</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#reservas">Reservar</a>
+      </nav>
+
+      <a href="#reservas" class="header-button">
+        Reservar agora
+      </a>
+
+    </div>
+  </header>
+
+  <!-- =====================================================
+    CONTEÚDO PRINCIPAL
+  ====================================================== -->
+  <main>
+
+    <!-- =====================================================
+      HERO
+    ====================================================== -->
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <div class="badge">
+            <i data-lucide="sparkles"></i>
+            <span>Viagens para compras no Brás</span>
+          </div>
+
+          <h1>
+            Sua viagem para São Paulo começa com uma reserva simples, moderna e segura.
+          </h1>
+
+          <p>
+            Escolha sua poltrona no ônibus Double Decker da AMANDATUR, preencha seus dados e fale direto no WhatsApp para confirmar sua viagem.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#reservas" class="primary-button">
+              Escolher minha poltrona
+              <i data-lucide="arrow-right"></i>
+            </a>
+
+            <a href="#como-funciona" class="secondary-button">
+              Ver como funciona
+            </a>
+          </div>
+
+          <div class="hero-stats" aria-label="Informações principais da viagem">
+            <div>
+              <strong>R$200</strong>
+              <span>por viagem</span>
+            </div>
+
+            <div>
+              <strong>Quarta</strong>
+              <span>saída principal</span>
+            </div>
+
+            <div>
+              <strong>Domingo</strong>
+              <span>saída principal</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="hero-card" aria-label="Resumo da próxima viagem">
+
+          <div class="hero-card-top">
+            <span>Próxima viagem</span>
+            <strong>Cianorte → São Paulo / Brás</strong>
+          </div>
+
+          <div class="route-box">
+
+            <div class="route-point">
+              <small>Origem</small>
+              <strong>Cianorte</strong>
+            </div>
+
+            <div class="route-line">
+              <span></span>
+              <i data-lucide="bus"></i>
+              <span></span>
+            </div>
+
+            <div class="route-point">
+              <small>Destino</small>
+              <strong>Brás - SP</strong>
+            </div>
+
+          </div>
+
+          <div class="mini-info-grid">
+
+            <div>
+              <i data-lucide="calendar-days"></i>
+              <span>Quarta e Domingo</span>
+            </div>
+
+            <div>
+              <i data-lucide="armchair"></i>
+              <span>Poltrona reservada</span>
+            </div>
+
+            <div>
+              <i data-lucide="message-circle"></i>
+              <span>Confirmação no WhatsApp</span>
+            </div>
+
+            <div>
+              <i data-lucide="shield-check"></i>
+              <span>Viagem organizada</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+      COMO FUNCIONA
+    ====================================================== -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Fluxo simples</span>
+          <h2>Como funciona a reserva?</h2>
+          <p>
+            Em poucos cliques, o passageiro escolhe a viagem, seleciona a poltrona e chama a AMANDATUR no WhatsApp.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+
+          <article class="step-card">
+            <span>01</span>
+            <i data-lucide="map"></i>
+            <h3>Escolha a viagem</h3>
+            <p>
+              Selecione a saída de quarta ou domingo para São Paulo / Brás.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span>02</span>
+            <i data-lucide="armchair"></i>
+            <h3>Escolha a poltrona</h3>
+            <p>
+              Visualize o ônibus Double Decker e clique na poltrona desejada.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span>03</span>
+            <i data-lucide="clipboard-check"></i>
+            <h3>Preencha seus dados</h3>
+            <p>
+              Informe nome, WhatsApp, cidade, data da viagem e observações.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <span>04</span>
+            <i data-lucide="send"></i>
+            <h3>Envie sua solicitação pelo WhatsApp</h3>
+            <p>
+              O sistema gera a mensagem pronta. A equipe AMANDATUR confirma manualmente.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+      VIAGENS
+    ====================================================== -->
+    <section class="section" id="viagens">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Rotas principais</span>
+          <h2>Escolha sua próxima saída</h2>
+          <p>
+            Viagens organizadas para quem vai comprar no Brás com mais praticidade, conforto e segurança.
+          </p>
+        </div>
+
+        <div class="travel-grid">
+
+          <button class="travel-card active" type="button" data-trip="Quarta-feira">
+            <div class="travel-icon">
+              <i data-lucide="calendar"></i>
+            </div>
+
+            <div class="travel-card-text">
+              <h3>Quarta-feira</h3>
+              <p>Cianorte → São Paulo / Brás</p>
+            </div>
+
+            <strong>R$200</strong>
+          </button>
+
+          <button class="travel-card" type="button" data-trip="Domingo">
+            <div class="travel-icon">
+              <i data-lucide="calendar-heart"></i>
+            </div>
+
+            <div class="travel-card-text">
+              <h3>Domingo</h3>
+              <p>Cianorte → São Paulo / Brás</p>
+            </div>
+
+            <strong>R$200</strong>
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+      BENEFÍCIOS
+    ====================================================== -->
+    <section class="section benefits-section" id="beneficios">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Conforto na viagem</span>
+          <h2>Ônibus equipado para sua experiência</h2>
+          <p>
+            A AMANDATUR oferece uma viagem mais confortável, organizada e preparada para quem vai ao Brás.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+
+          <article class="benefit-card">
+            <i data-lucide="toilet"></i>
+            <h3>Banheiro</h3>
+            <p>Mais conforto e praticidade para viagens longas.</p>
+          </article>
+
+          <article class="benefit-card">
+            <i data-lucide="droplets"></i>
+            <h3>Água</h3>
+            <p>Água disponível para deixar a viagem mais tranquila.</p>
+          </article>
+
+          <article class="benefit-card">
+            <i data-lucide="sandwich"></i>
+            <h3>Lanche</h3>
+            <p>Mais praticidade para os passageiros durante o trajeto.</p>
+          </article>
+
+          <article class="benefit-card">
+            <i data-lucide="wifi"></i>
+            <h3>Wi-Fi</h3>
+            <p>Conexão para deixar a experiência ainda melhor.</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+      RESERVAS / MAPA DO ÔNIBUS
+    ====================================================== -->
+    <section class="section reservation-section" id="reservas">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Reserva inteligente</span>
+          <h2>Escolha sua poltrona no Double Decker</h2>
+          <p>
+            Clique em uma poltrona disponível, preencha seus dados e confirme diretamente pelo WhatsApp.
+          </p>
+        </div>
+
+        <div class="reservation-layout" id="onibus">
+
+          <!-- PAINEL LATERAL -->
+          <aside class="reservation-panel" aria-label="Resumo da viagem">
+            <div class="panel-card">
+
+              <h3>Resumo da viagem</h3>
+
+              <div class="summary-item">
+                <span>Empresa</span>
+                <strong>AMANDATUR</strong>
+              </div>
+
+              <div class="summary-item">
+                <span>Rota</span>
+                <strong>Cianorte → São Paulo / Brás</strong>
+              </div>
+
+              <div class="summary-item">
+                <span>Saída selecionada</span>
+                <strong id="selectedTripText">Quarta-feira</strong>
+              </div>
+
+              <div class="summary-item">
+                <span>Valor</span>
+                <strong>R$200</strong>
+              </div>
+
+              <div class="legend" aria-label="Legenda das poltronas">
+
+                <div>
+                  <span class="legend-dot available"></span>
+                  Disponível
+                </div>
+
+                <div>
+                  <span class="legend-dot selected"></span>
+                  Selecionada
+                </div>
+
+                <div>
+                  <span class="legend-dot reserved"></span>
+                  Reservada
+                </div>
+
+              </div>
+
+              <div class="integration-box">
+                <i data-lucide="workflow"></i>
+
+                <div>
+                  <strong>Preparado para automação</strong>
+                  <p>
+                    Google Sheets, Apps Script, n8n e WhatsApp API.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </aside>
+
+          <!-- ÁREA DO ÔNIBUS -->
+          <div class="bus-wrapper">
+
+            <div class="bus-header">
+
+              <div>
+                <span>AMANDATUR Double Decker</span>
+                <strong>Mapa de poltronas</strong>
+              </div>
+
+              <div class="bus-status">
+                <span></span>
+                Sistema online
+              </div>
+
+            </div>
+
+            <div class="decks-grid">
+
+              <!-- =====================================================
+                ANDAR SUPERIOR
+              ====================================================== -->
+              <div class="deck-card premium-deck">
+
+                <div class="deck-title">
+                  <i data-lucide="arrow-up-circle"></i>
+
+                  <div>
+                    <span>Andar superior</span>
+                    <strong>Poltronas panorâmicas</strong>
+                  </div>
+                </div>
+
+                <div class="bus-shell upper-shell">
+
+                  <div class="bus-front">
+                    <span>Frente do ônibus</span>
+                  </div>
+
+                  <div class="seat-map-header">
+                    <span>Janela</span>
+                    <span>Corredor</span>
+                    <span>Janela</span>
+                  </div>
+
+                  <!-- As poltronas do andar superior serão criadas pelo JavaScript -->
+                  <div class="real-seat-map" id="upperDeckSeats" aria-label="Poltronas do andar superior"></div>
+
+                  <div class="bus-back">
+                    <span>Fundo do ônibus</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- =====================================================
+                ANDAR INFERIOR
+              ====================================================== -->
+              <div class="deck-card premium-deck">
+
+                <div class="deck-title">
+                  <i data-lucide="arrow-down-circle"></i>
+
+                  <div>
+                    <span>Andar inferior</span>
+                    <strong>Entrada, apoio e conforto</strong>
+                  </div>
+                </div>
+
+                <div class="bus-shell lower-shell">
+
+                  <div class="bus-front">
+                    <span>Motorista / Entrada</span>
+                  </div>
+
+                  <div class="bus-services">
+
+                    <div>
+                      <i data-lucide="toilet"></i>
+                      <span>Banheiro</span>
+                    </div>
+
+                    <div>
+                      <i data-lucide="droplets"></i>
+                      <span>Água</span>
+                    </div>
+
+                    <div>
+                      <i data-lucide="wifi"></i>
+                      <span>Wi-Fi</span>
+                    </div>
+
+                  </div>
+
+                  <div class="seat-map-header">
+                    <span>Janela</span>
+                    <span>Corredor</span>
+                    <span>Janela</span>
+                  </div>
+
+                  <!-- As poltronas do andar inferior serão criadas pelo JavaScript -->
+                  <div class="real-seat-map" id="lowerDeckSeats" aria-label="Poltronas do andar inferior"></div>
+
+                  <div class="bus-back">
+                    <span>Área de apoio</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+      SEÇÃO DE AUTOMAÇÃO / DIFERENCIAL
+    ====================================================== -->
+    <section class="section automation-section">
+      <div class="container automation-grid">
+
+        <div class="automation-content">
+
+          <div class="section-title-left">
+            <span>Sistema inteligente</span>
+            <h2>Reserva conectada com WhatsApp, planilha e automação.</h2>
+            <p>
+              A estrutura foi pensada para captar novos passageiros, organizar contatos e criar um fluxo moderno de atendimento para a AMANDATUR.
+            </p>
+          </div>
+
+          <div class="automation-list">
+
+            <div>
+              <i data-lucide="message-circle"></i>
+              <span>Envio automático para WhatsApp</span>
+            </div>
+
+            <div>
+              <i data-lucide="table-2"></i>
+              <span>Preparado para Google Sheets</span>
+            </div>
+
+            <div>
+              <i data-lucide="bot"></i>
+              <span>Preparado para n8n e WhatsApp API</span>
+            </div>
+
+            <div>
+              <i data-lucide="database"></i>
+              <span>Base de clientes para remarketing</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="automation-card">
+
+          <div class="automation-card-header">
+            <span>Nova solicitação</span>
+            <strong>Solicitação recebida</strong>
+          </div>
+
+          <div class="lead-preview">
+
+            <div>
+              <span>Cliente</span>
+              <strong>Nome do passageiro</strong>
+            </div>
+
+            <div>
+              <span>Viagem</span>
+              <strong>Cianorte → Brás</strong>
+            </div>
+
+            <div>
+              <span>Poltrona</span>
+              <strong>Selecionada no mapa</strong>
+            </div>
+
+            <div>
+              <span>Status</span>
+              <strong style="color: #ffc857;">PENDENTE</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+      CTA FINAL
+    ====================================================== -->
+    <section class="final-cta">
+      <div class="container final-cta-content">
+
+        <span>AMANDATUR</span>
+
+        <h2>Pronto para reservar sua próxima viagem?</h2>
+
+        <p>
+          Escolha sua poltrona, envie seus dados e fale com a equipe da AMANDATUR no WhatsApp.
+        </p>
+
+        <a href="#reservas" class="primary-button">
+          Reservar minha poltrona
+          <i data-lucide="arrow-right"></i>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+  FOOTER PROFISSIONAL
+====================================================== -->
+<footer class="footer-apple">
+  <div class="container footer-content">
+
+    <div class="footer-main">
+      <a href="#inicio" class="footer-brand" aria-label="AMANDATUR">
+        <div class="footer-logo">
+          <img src="logo.png" alt="Logo AMANDATUR">
+        </div>
+
+        <div>
+          <strong>AMANDATUR</strong>
+          <span>Conforto e segurança que você merece.</span>
+        </div>
+      </a>
+
+      <div class="footer-social">
+        <a 
+          href="https://www.instagram.com/amandatur_turismo/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          aria-label="Instagram da AMANDATUR"
+          class="instagram-link"
+        >
+          <i data-lucide="instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-links-grid">
+
+      <div class="footer-column">
+        <h4>Viagens</h4>
+        <a href="#viagens">Quarta-feira</a>
+        <a href="#viagens">Domingo</a>
+        <a href="#reservas">Escolher poltrona</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Atendimento</h4>
+        <a href="#reservas">Reservas</a>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#como-funciona">Como funciona</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Rota</h4>
+        <span>Cianorte → São Paulo / Brás</span>
+        <span>Viagens para compras</span>
+        <span>Valor: R$200</span>
+      </div>
+
+      <div class="footer-column">
+        <h4>Experiência</h4>
+        <span>Ônibus Double Decker</span>
+        <span>Banheiro, água, lanche e Wi-Fi</span>
+        <span>Reserva pelo WhatsApp</span>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © <span id="currentYear"></span> AMANDATUR. Todos os direitos reservados.
+      </p>
+
+      <p>
+        Sistema de reservas inteligentes desenvolvido para captação, organização e atendimento de passageiros.
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+  </main>
+
+  <!-- =====================================================
+    MODAL DE RESERVA
+  ====================================================== -->
+  <div class="modal-overlay" id="reservationModal" aria-hidden="true">
+
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+
+      <button class="modal-close" id="closeModal" type="button" aria-label="Fechar modal">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="modal-header">
+
+        <div class="modal-icon">
+          <i data-lucide="send"></i>
+        </div>
+
+        <div>
+          <span>Solicitação de poltrona</span>
+          <h2 id="modalTitle">
+            Poltrona <strong id="modalSeatNumber">00</strong>
+          </h2>
+        </div>
+
+      </div>
+
+      <div class="modal-trip-info">
+
+        <div>
+          <span>Rota</span>
+          <strong>Cianorte → São Paulo / Brás</strong>
+        </div>
+
+        <div>
+          <span>Saída</span>
+          <strong id="modalTripDay">Quarta-feira</strong>
+        </div>
+
+        <div>
+          <span>Horário previsto</span>
+          <strong id="modalTripTime">19h00</strong>
+        </div>
+
+        <div>
+          <span>Valor</span>
+          <strong>R$200</strong>
+        </div>
+
+      </div>
+
+      <p class="modal-description modal-notice">
+        <strong>⚠️ Atenção:</strong> Você está enviando uma <strong>solicitação de reserva</strong>. A poltrona fica reservada somente após confirmação manual da equipe AMANDATUR pelo WhatsApp.
+      </p>
+
+      <form id="reservationForm">
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label for="clientName">Nome completo</label>
+            <input 
+              type="text" 
+              id="clientName" 
+              name="clientName"
+              placeholder="Digite seu nome" 
+              autocomplete="name"
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="clientWhatsapp">WhatsApp</label>
+            <input 
+              type="tel" 
+              id="clientWhatsapp" 
+              name="clientWhatsapp"
+              placeholder="Ex: 44999999999"
+              inputmode="tel"
+              autocomplete="tel"
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="clientCity">Cidade</label>
+            <input 
+              type="text" 
+              id="clientCity" 
+              name="clientCity"
+              placeholder="Ex: Cianorte" 
+              autocomplete="address-level2"
+              required 
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="travelDate">Data da viagem</label>
+            <input 
+              type="date" 
+              id="travelDate" 
+              name="travelDate"
+              required 
+            />
+          </div>
+          
+          <div class="form-group">
+  <label for="clientCpf">CPF <span class="field-optional">(opcional)</span></label>
+  <input 
+    type="text" 
+    id="clientCpf" 
+    name="clientCpf"
+    placeholder="Digite seu CPF (opcional)"
+    inputmode="numeric"
+    autocomplete="off"
+  />
+</div>
+
+<div class="form-group">
+  <label for="clientDisability">Possui alguma deficiência? <span class="field-optional">(opcional)</span></label>
+  <select id="clientDisability" name="clientDisability">
+    <option value="">Não informado</option>
+    <option value="Não">Não</option>
+    <option value="Sim">Sim</option>
+    <option value="Prefiro informar no WhatsApp">Prefiro informar no WhatsApp</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="clientMedication">Toma algum remédio? <span class="field-optional">(opcional)</span></label>
+  <select id="clientMedication" name="clientMedication">
+    <option value="">Não informado</option>
+    <option value="Não">Não</option>
+    <option value="Sim">Sim</option>
+    <option value="Prefiro informar no WhatsApp">Prefiro informar no WhatsApp</option>
+  </select>
+</div>
+
+        </div>
+
+        <div class="form-group">
+          <label for="clientNotes">Observações</label>
+          <textarea 
+            id="clientNotes" 
+            name="clientNotes"
+            placeholder="Ex: Quero confirmar horário de saída, local de embarque etc."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+  <label for="clientHealthNotes">Cuidados importantes para a viagem <span class="field-optional">(opcional)</span></label>
+  <textarea 
+    id="clientHealthNotes" 
+    name="clientHealthNotes"
+    placeholder="Ex: dificuldade de locomoção, remédio com horário, necessidade de ajuda no embarque etc."
+  ></textarea>
+</div>
+
+<label class="consent-check">
+  <input type="checkbox" id="clientConsent" required>
+  <span>
+    Autorizo o envio dos meus dados para a AMANDATUR com a finalidade de organizar minha reserva e atendimento da viagem.
+  </span>
+</label>
+
+        <button type="submit" class="submit-button" id="submitReservationBtn">
+          Enviar solicitação pelo WhatsApp
+          <i data-lucide="send"></i>
+        </button>
+
+        <p class="modal-warning">
+          ⚠️ Esta é uma <strong>solicitação</strong>, não uma reserva confirmada. A equipe AMANDATUR irá confirmar manualmente pelo WhatsApp após verificar disponibilidade.
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- =====================================================
+    TOAST / AVISO
+  ====================================================== -->
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <i data-lucide="check-circle"></i>
+    <span>Dados preparados com sucesso.</span>
+  </div>
+
+  <!-- =====================================================
+    BOTÃO FLUTUANTE WHATSAPP
+  ====================================================== -->
+  <div class="whatsapp-float-wrapper" id="whatsappFloatWrapper">
+    <span class="whatsapp-float-label">Dúvidas? Clique aqui.<br>Estamos online.</span>
+    <a 
+      href="#" 
+      class="whatsapp-float" 
+      id="floatingWhatsapp"
+      aria-label="Falar com a AMANDATUR no WhatsApp"
+    >
+      <span class="whatsapp-pulse"></span>
+      <!-- Logo oficial do WhatsApp -->
+      <svg class="whatsapp-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.216 175.552" aria-hidden="true">
+        <defs>
+          <linearGradient id="wa-grad-a" x1="85.915" x2="86.535" y1="32.567" y2="137.092" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#57d163"/>
+            <stop offset="1" stop-color="#23b33a"/>
+          </linearGradient>
+          <linearGradient id="wa-grad-b" x1="129.502" x2="130.553" y1="33.555" y2="137.005" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fff"/>
+            <stop offset="1" stop-color="#fff"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#wa-grad-a)" d="M87.184 25.227c-33.733 0-61.166 27.423-61.178 61.13a60.98 60.98 0 0 0 9.349 32.535l1.455 2.312-6.179 22.535 23.146-6.069 2.235 1.324c9.387 5.571 20.15 8.517 31.126 8.523h.023c33.707 0 61.14-27.426 61.153-61.135a60.75 60.75 0 0 0-17.895-43.251 60.75 60.75 0 0 0-43.235-17.904z"/>
+        <path fill="url(#wa-grad-b)" d="M68.772 55.603c-1.378-3.061-2.828-3.123-4.137-3.176l-3.524-.043c-1.226 0-3.218.46-4.902 2.3s-6.435 6.287-6.435 15.332 6.588 17.785 7.506 19.013 12.718 20.381 31.405 27.75c15.529 6.124 18.689 4.906 22.061 4.6s10.877-4.447 12.408-8.74 1.532-7.971 1.073-8.74-1.685-1.226-3.525-2.146-10.877-5.367-12.562-5.981-2.91-.919-4.137.921-4.746 5.979-5.819 7.206-2.144 1.381-3.984.462-7.76-2.861-14.784-9.124c-5.465-4.873-9.154-10.891-10.228-12.73s-.114-2.835.808-3.751c.825-.824 1.838-2.147 2.759-3.22s1.224-1.84 1.836-3.065.307-2.301-.153-3.22-4.032-10.011-5.644-13.579z"/>
+      </svg>
+    </a>
+  </div>
+
+  <!-- =====================================================
+    JAVASCRIPT
+  ====================================================== -->
+  <script src="script.js"></script>
+
+</body>
+</html>
